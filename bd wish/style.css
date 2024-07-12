@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bodoni Moda', serif;
+}
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #5da6ff;
+    box-shadow: 0 0 15px #5da6ff,
+    0 0 30px #5da6ff,
+    0 0 45px #5da6ff,
+    0 0 60px #5da6ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fffc45;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 29px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.frames {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #05e2ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.frames img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.frames p {
+    font-size: 25px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    .frames {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .frames {
+        flex-basis: calc(100% - 20px);
+    }
+}
